@@ -22,10 +22,12 @@ from rest_framework.routers import DefaultRouter
 from User.views import UserViewset,UserProfileUpdateViewset
 from rest_framework.authtoken.views import obtain_auth_token
 from Turf.views import TurfViewSet
+from Offers.views import CuoponView
 router = DefaultRouter()
 router.register(r"user",UserViewset,basename="user")
 router.register(r"update",UserProfileUpdateViewset,basename="update")
 router.register(r"turfs", TurfViewSet, basename="turfs")
+router.register(r"Cuopon", CuoponView, basename="Cuopon")
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("api-auth/",include("rest_framework.urls")),
