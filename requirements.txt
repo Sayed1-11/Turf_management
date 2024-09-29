@@ -136,7 +136,7 @@ python-crontab
 python-dateutil
 python-json-logger
 pytweening
-pywin32==302
+pywin32==306
 pywinpty
 PyYAML
 pyzmq
